@@ -1,0 +1,58 @@
+aid: open-barnet-gov-uk
+name: Barnet Open Data
+description: >-
+  Barnet Open Data is a local council open-data portal for United Kingdom running CKAN.
+  It exposes the CKAN catalog API, a standardized machine-readable interface over approximately an open datasets,
+  supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs CKAN, it shares a
+  consistent API surface with every other CKAN portal, making it uniformly harvestable and integrable.
+kind: government
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/open-barnet-gov-uk/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - CKAN
+  - Data Catalog
+  - DCAT
+  - Government Data
+  - Local Council
+  - United Kingdom
+created: '2026-06-04'
+modified: '2026-06-04'
+specificationVersion: '0.19'
+apis:
+  - aid: open-barnet-gov-uk:catalog
+    name: Barnet Open Data CKAN Action API
+    description: >-
+      CKAN Action API for Barnet Open Data, a consistent JSON-over-HTTP interface over a catalog of an open datasets. Standard actions include package_search, package_show, package_list, organization_list, group_list, tag_list, and resource_search; datastore_search is available where the DataStore extension is enabled. Base URL https://open.barnet.gov.uk/api/3/action/.
+    humanURL: https://open.barnet.gov.uk
+    baseURL: https://open.barnet.gov.uk/api/3/action
+    tags:
+      - CKAN
+      - Action API
+      - Open Data
+      - Catalog
+      - REST
+      - JSON
+    properties:
+      - type: Documentation
+        url: https://docs.ckan.org/en/latest/api/
+      - type: Website
+        url: https://open.barnet.gov.uk
+      - type: x-api-endpoint
+        url: https://open.barnet.gov.uk/api/3/action/status_show
+common:
+  - type: Website
+    url: https://open.barnet.gov.uk
+  - type: Documentation
+    url: https://docs.ckan.org/en/latest/api/
+  - type: Plans
+    url: plans/open-barnet-gov-uk-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/open-barnet-gov-uk-rate-limits.yml
+  - type: FinOps
+    url: finops/open-barnet-gov-uk-finops.yml
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
