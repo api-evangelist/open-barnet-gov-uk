@@ -30,7 +30,7 @@ tags:
   - United Kingdom
 created: '2026-06-04'
 modified: '2026-06-04'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
   - aid: open-barnet-gov-uk:catalog
     name: Barnet Open Data CKAN Action API
